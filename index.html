@@ -39,9 +39,14 @@ Iniciou sua carreira nas categorias de base do Bayern de Munique e, em 2022, tra
 <button>❤️<span>0</span></button>
   
 </main>
-  function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
 </body>
 </html>
+
+<script>
+  const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+  function botaoClicado() {
+    let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
